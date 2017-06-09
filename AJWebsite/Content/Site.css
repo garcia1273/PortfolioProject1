@@ -1,0 +1,291 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 20px;
+    background-color: cornflowerblue;
+    color: yellow;
+    min-width:850px;
+}
+
+
+.dl-horizontal dt {
+    white-space:normal;
+   
+}
+.dl-horizontalDetails{
+    padding:200px 200px 0 200px;
+    margin:50px;
+
+}
+
+input,
+select,
+textarea {
+    width:439px;
+    height:27px;
+    border:1px solid blue;
+    padding:5px;
+    margin:10px;
+    font-size:1em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+
+}
+textarea {
+
+	height:213px;
+
+}
+
+h1 {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    padding-left: 30px;
+}
+.form-horizontalContact{   
+
+	border: 1px solid blue;
+	background-color:#A9C1C4;
+	padding: 15px;
+    margin:15px auto;
+    width:500px;
+}
+.form-horizontalLogin{   	
+	padding: 15px;
+    margin:15px auto;
+    width:500px;
+}
+#RememberMe{
+    width:100px;
+}
+h4 {
+    text-align:left;
+}
+h2{
+    text-align:right;
+    padding: 0 10px 0 0;
+}
+
+.flex-container {
+  
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    padding:0;
+    margin:0;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;    
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    height: 48%;
+    background-color: green;
+}
+
+.flex-items {
+    background-color: blue;
+    width: 80%;
+    height:100%;
+    margin: 0;
+    padding:0;
+    border-radius:17px;
+}
+
+.flex-footer {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 40%;
+    margin: 10px 0 0 0;
+}
+
+.flex-header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    background-color: rgb(59,103,158); /* Old browsers */   
+    background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 98%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+    
+}
+/*.main-menu {
+    background-image: url("/img/logo.gif");
+    background-repeat: no-repeat;
+}*/
+
+ul {
+    margin: 0;
+    padding-top: 185px;  
+    display:block;
+    margin:0;
+    list-style-type:none;
+    color:yellow;
+    text-align:center;
+
+}
+
+li {
+  
+    display: inline;
+    text-decoration: none;    
+    padding: 12px 0 0 0;
+    
+    border-radius: 20px 20px 0 0;
+    background-color:rosybrown;
+    border:solid brown;
+    border-bottom:none;
+    font-size:2em;
+}
+
+/*unvisited link*/
+a:link{
+    color:blue;
+    text-decoration:none;  
+    padding:20px;
+    padding-bottom:0;
+    margin:0;
+    border-radius:20px 20px 0 0;
+
+}
+
+
+/*visited link*/
+a:visited{
+    color:white;
+    text-decoration:none;
+}
+
+/*mouse over link*/
+a:hover{
+    color:black;   
+}
+
+/*selected link*/
+.active {
+    background-color: green;
+}
+
+#LogInPage li{
+  
+    border:none;
+    font-size:12px;
+}
+
+
+p{
+    padding:20px;
+    text-align:left;
+}
+
+#col-md-10{
+    height:300px;
+    width:300px;
+}
+
+
+.mySlides {  
+    padding:10%;       
+  
+    width:15%;
+    height: 200px;   
+  
+}
+.left-column, .mySlides{
+    background-color: #C76B6D;	
+	margin:0;
+	border-radius: 17px;   
+    flex: 0 0 30%;
+    max-width:20%;
+}
+
+img {   
+    padding: 10px;
+    position: absolute;
+    max-width: 15%;     
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+.table{
+    padding:0;
+    margin:0;
+    font-size:1.5em;
+}
+th{
+    padding:15px;
+    margin-left:15px;
+}
+.links{
+    padding:300px 10px 0 0;
+}
+
+.table{
+    padding:15px;
+    
+}
+
+.blog {    
+    display: flex;  
+    width: 100%;
+    margin: 0;
+    padding:0;   
+    background-color:purple;
+    flex-direction:column;
+    
+}
+.blogPic{
+    border-image:repeat;
+    padding:0 50% 0 50%;
+    max-width: 150px;
+    max-height: 150px;
+   
+}
+.customersProjectsTable{
+    border-collapse: collapse;
+    
+}
+.customersProjectsTable td {
+    border: 3px solid #095b03;
+}
+
+.customersProjectsTable th {
+    height: 30px;
+    text-align: left;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+}
+th, td{
+    padding:15px;
+    text-align:left;
+}
+.customersProjectsTable tr:hover{
+    background-color: orange;
+}
+td.linksEDD{
+    border:none;
+}
+#tableCaption {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    padding-left: 30px;
+    font-size:2em;
+}
+.form-group{
+   
+    padding:0;
+}
+
+
+
+
+    
+

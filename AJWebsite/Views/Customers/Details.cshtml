@@ -1,0 +1,83 @@
+﻿@model AJWebsite.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div>
+    <h2>Customer</h2>
+    
+    <dl class="dl-horizontal" style="padding:40px;">
+        <dt>
+            <b>@Html.DisplayNameFor(model => model.FirstName): </b> @Html.DisplayFor(model => model.FirstName)  <br />
+        </dt>
+    
+        <dd>
+           
+        </dd>
+      
+        <dt>
+           <b>@Html.DisplayNameFor(model => model.LastName):</b> @Html.DisplayFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            
+        </dd>
+
+        <dt>
+            <b>@Html.DisplayNameFor(model => model.Address):</b> @Html.DisplayFor(model => model.Address)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            <b>@Html.DisplayNameFor(model => model.City):</b> @Html.DisplayFor(model => model.City)
+        </dt>
+
+        <dd>
+            
+        </dd>
+
+        <dt>
+            <b>@Html.DisplayNameFor(model => model.State):</b> @Html.DisplayFor(model => model.State)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+           <b> @Html.DisplayNameFor(model => model.Zip): </b> @Html.DisplayFor(model => model.Zip)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+           <b> @Html.DisplayNameFor(model => model.PhoneNumber): </b> @Html.DisplayFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            <b>@Html.DisplayNameFor(model => model.email): </b> @Html.DisplayFor(model => model.email)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+    </dl><br/>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ClientId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+

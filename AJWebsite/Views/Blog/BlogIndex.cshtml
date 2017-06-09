@@ -1,0 +1,40 @@
+﻿@model IEnumerable<AJWebsite.Models.BlogPostModel>
+
+@{
+    ViewBag.Title = "BlogIndex";
+}
+
+
+<div>
+    <h1>My blog</h1>
+<table class="table">
+
+    <tr>
+
+        <th>
+            
+            <p>Read my blog posts below...</p>
+        </th>
+    
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <h4><a href="~/Blog/Details/@item.BlogId">@item.Title</a></h4>
+        </td>
+    
+        
+    </tr>
+}
+
+</table>
+<p>
+    @if (Session["signedIn"] != null)
+    {
+        <a href="~/blog/create">Create new post</a>
+    }
+</p>
+</div>

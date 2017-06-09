@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+
+} 
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/validate.unobtrusive.min.js")"></script>
+@Scripts.Render("~/Content/JavaScript.js")
+
+      <aside class="left-column">
+                           
+                <div class="mySlides">
+
+                    <div id="pic"><img src="~/img/sample1.gif" alt=""></div>
+                    <div id="pic"><img src="~/img/sample2.gif" alt=""></div>
+                    <div id="pic"><img src="~/img/sample3.gif" alt=""></div>
+                </div>
+          
+           
+                    <div class="mySlides">
+
+                        <div id="pic"><img src="~/img/sample1.gif" alt=""></div>
+                        <div id="pic"><img src="~/img/sample2.gif" alt=""></div>
+                        <div id="pic"><img src="~/img/sample3.gif" alt=""></div>
+                    </div>
+        
+    </aside>    
+         <div class="flex-items">
+             <h1>Welcome!</h1>
+                 <p>
+                     Hello!<br/>
+                     Thank you for visiting my website. If you have any questions please send me an email from the "Contact Us" 
+                     page or call me to talk about what type of services you need and give you an estimated price. Check out the rest of my
+                     website where you can find out the type of work we do and don't forget to check out the blog where I will be
+                     posting pictures of the work we've done.<br/><br/>
+                     Thank you! 
+                </p>
+           
+        </div><!--mainbody-->
+
+@Scripts.Render("~bundles/jquery")
+
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $("slideshow > div:gt(0)").hide();
+        setInterval(function () {
+            $('.mySlides > div:first').fadeOut(3000).next().fadeIn(3000).end().appendTo('.mySlides');
+        }, 3000);
+    });
+</script>
+
+    
+
+

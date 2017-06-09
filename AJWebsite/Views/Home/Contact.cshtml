@@ -1,0 +1,43 @@
+﻿@model AJWebsite.Models.ContactModels
+@{
+ 
+   
+}
+
+
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "form-horizontalContact", role = "form" }))
+{
+    <h1>@ViewBag.Message</h1>
+    
+    
+
+    @Html.AntiForgeryToken()
+    
+    @Html.ValidationSummary(true)
+    <div class="form-group">
+        @Html.LabelFor(model=>model.FirstName, "First Name:")<br/>
+        @Html.EditorFor(model=>model.FirstName)
+        @Html.ValidationMessageFor(model=>model.FirstName)
+        <br/><br/>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName,"Last Name:")<br/>
+        @Html.EditorFor(model => model.LastName)
+        <br /><br />
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, "Email:")<br/>
+        @Html.EditorFor(model => model.Email)
+            <br /><br />
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model=>model.Message, "Message:") <br/>
+        @Html.TextAreaFor(model=>model.Message)
+        <br/><br/>    
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Send" class="btn"/>
+        <input type="reset" value="Reset"/>
+        <br/><br/>
+    </div>
+}

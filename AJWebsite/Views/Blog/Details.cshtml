@@ -1,0 +1,50 @@
+﻿@model AJWebsite.Models.BlogPostModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<br />
+<div>
+
+    <br /><br />
+    <div class="blogPic">
+     
+        <img src="/img/@Html.DisplayFor(model => model.Image)" height="200" width="500" alt=""/><br /><br />
+      
+    </div>
+
+    <dl class="dl-horizontalDetails">
+        <dt>
+            
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+
+        <dd>
+            Created on:<br /><br />
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+    </dl>
+
+    <p style="text-align:center;">
+
+        @if (Session["signedIn"] != null)
+        {
+            @Html.ActionLink("Edit", "Edit", new { id = Model.BlogId });
+            @Html.ActionLink("Delete", "Delete", new { id = Model.BlogId });
+        }      
+        
+        @Html.ActionLink("Back to List", "BlogIndex")
+    </p>
+
+</div>
